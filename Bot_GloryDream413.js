@@ -14,11 +14,9 @@ async function createPrediction (text) {
   const response = await axios.post(
     'https://api.replicate.com/v1/predictions',
     {
-      // Pinned to a specific version of Stable Diffusion
-      // See https://replicate.com/stability-ai/stable-diffussion/versions
       version:
-        '601eea49d49003e6ea75a11527209c4f510a93e2112c969d548fbb45b9c4f19f', //stable-diffussion
-      input: { prompt: text + ', 4k photo'}
+        '9475aa3102d1be01bbf84cd88cc4ac5c85d037b5ff37e7a0f973ebbf81f409d7',
+      input: { prompt: '(((masterpiece))),(((bestquality))),((ultra-detailed)),(illustration),((anextremelydelicateandbeautiful)),dynamicangle,floating,(beautifuldetailedeyes),' + text }
     },
     {
       headers: {
