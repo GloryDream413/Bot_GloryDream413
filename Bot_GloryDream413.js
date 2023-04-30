@@ -28,7 +28,7 @@ async function createPrediction (text) {
 
   const prediction = response.data
   return prediction
-}
+} 
 
 async function getPredictionStatus (id) {
   const response = await axios.get(
