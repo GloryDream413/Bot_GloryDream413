@@ -16,7 +16,7 @@ async function createPrediction (text) {
     {
       version:
         '9475aa3102d1be01bbf84cd88cc4ac5c85d037b5ff37e7a0f973ebbf81f409d7',
-      input: { prompt: '(((masterpiece))),(((bestquality))),((ultra-detailed)),(illustration),((anextremelydelicateandbeautiful)),dynamicangle,floating,(beautifuldetailedeyes),' + text }
+      input: { prompt: text }
     },
     {
       headers: {
