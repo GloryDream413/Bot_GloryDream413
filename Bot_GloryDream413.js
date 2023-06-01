@@ -15,7 +15,7 @@ async function createPrediction (text) {
     'https://api.replicate.com/v1/predictions',
     {
       version:
-        '9475aa3102d1be01bbf84cd88cc4ac5c85d037b5ff37e7a0f973ebbf81f409d7',
+        '09a5805203f4c12da649ec1923bb7729517ca25fcac790e640eaa9ed66573b65',
       input: { prompt: text }
     },
     {
